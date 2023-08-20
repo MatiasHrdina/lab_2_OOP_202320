@@ -9,4 +9,4 @@ class Request:
 
     def get(self):
         Dictionary = requests.get(self._url)
-         return Dictionary.json()
+        return Dictionary.json()

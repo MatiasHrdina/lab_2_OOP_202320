@@ -3,4 +3,4 @@
 #apply(): Float
 
 class Filter:
-    
+    pass

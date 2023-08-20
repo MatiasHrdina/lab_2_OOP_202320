@@ -10,8 +10,9 @@ class Summary:
         self._data = data
         self._frequencies = frequencies
 
-    def call():
-
-    def _build_summary():
-
-    def _process_element():
+    def call(self):
+        pass
+    def _build_summary(self):
+        pass
+    def _process_element(self, ):
+        pass
