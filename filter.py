@@ -3,3 +3,4 @@
 #apply(): Float
 
 class Filter:
+    
