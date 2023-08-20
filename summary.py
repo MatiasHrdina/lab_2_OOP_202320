@@ -19,7 +19,9 @@ class Summary:
     def _process_element(self, element):
         processed = False
         for registered in self._frequencies:
-          
+          if registered['local_nombre'] == element['local_nombre']:
+              self._frequencies['value'] += 1
+              processed = True
             
         if not processed :
             self._frequencies.append({'local_nombre' : element['local_nombre'],'value' : 1})
