@@ -7,4 +7,5 @@ class Filter:
         self._data = data
     
     def apply(self):
-        pass
+        for pharmacy in self._data:
+            pass
