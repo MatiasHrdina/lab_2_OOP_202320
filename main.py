@@ -4,5 +4,6 @@
 
 from request import Request
 
-webpage = Request("https://andreshoward.com/pharmacies")
-
+def main():
+    webpage = Request("https://andreshoward.com/pharmacies")
+    

@@ -3,4 +3,8 @@
 #apply(): Float
 
 class Filter:
-    pass
+    def __init__(self):
+        self._data = data
+    
+    def apply(self):
+        pass
