@@ -4,7 +4,7 @@
 
 from request import Request
 from summary import Summary
-#from filter import Filter
+from filter import Filter
 
 class Main:
     def __init__(self):
@@ -13,8 +13,9 @@ class Main:
     def main(self, pharmacy):
         data = Request(self._url)
         summary = Summary(data.get())
-        #filtering = Filter(summary.call())
+        filtering = Filter(summary.call())
+        print(filtering.apply(pharmacy))
         
 
 main = Main()
-print (summary)
+main.main("AHUMADA")
