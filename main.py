@@ -10,11 +10,11 @@ class Main:
     def __init__(self, url):
         self._url = url
 
-    def main(self):
+    def main(self, pharmacy):
         data = Request(self._url)
         summary = Summary(data.get())
         filtering = Filter(summary.call())
-        print(filtering.apply("CRUZ VERDE"))
+        print(filtering.apply(pharmacy))
         
 
-Main("https://andreshoward.com/pharmacies").main()
+Main("https://andreshoward.com/pharmacies").main("CRUZ VERDE")
