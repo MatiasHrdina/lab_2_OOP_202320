@@ -11,6 +11,7 @@ class Summary:
 
     def call(self):
         self._build_summary()
+        return self._frequencies
         
     def _build_summary(self):
         for element in self._data:
