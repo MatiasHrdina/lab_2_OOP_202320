@@ -1,6 +1,3 @@
-#url: String
-
-#get(): Dictionary
 import requests
 
 class Request:

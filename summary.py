@@ -2,8 +2,6 @@
 #frequencies: Dictionary
 
 #call(): Dictionary
-#build_summary(): None
-#process_element(): None
 class Summary:
     def __init__(self, Dictionary):
         self._data = Dictionary
@@ -20,7 +18,7 @@ class Summary:
     def _process_element(self, element):
         processed = False
         for registered in self._frequencies:
-            if registered['local_nombre'] in element['local_nombre']:
+            if (registered['local_nombre'] == element['local_nombre']):
                 registered['value'] += 1
                 processed = True
                 break

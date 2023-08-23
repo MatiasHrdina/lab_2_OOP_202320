@@ -1,7 +1,3 @@
-# url:String
-
-#main(): None
-
 from request import Request
 from summary import Summary
 from filter import Filter

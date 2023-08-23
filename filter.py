@@ -1,7 +1,3 @@
-#data: Dictionary
-
-#apply(): Float
-
 class Filter:
     def __init__(self, data):
         self._data = data
