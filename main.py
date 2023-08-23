@@ -3,9 +3,18 @@
 #main(): None
 
 from request import Request
-#from summary import Summary
+from summary import Summary
 #from filter import Filter
 
-webpage = Request("https://andreshoward.com/pharmacies")
-data = webpage.get()
-print(data)
+class Main:
+    def __init__(self):
+        self._url = "https://andreshoward.com/pharmacies"
+
+    def main(self, pharmacy):
+        data = Request(self._url)
+        summary = Summary(data.get())
+        #filtering = Filter(summary.call())
+        
+
+main = Main()
+print (summary)
